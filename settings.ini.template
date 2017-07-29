@@ -1,0 +1,7 @@
+[ServerInfo]
+server=your.server.ip.address
+adminpass=yourpassword
+rcon_port=27016 (usually this is the default, but can be changed)
+
+[PlayerInfo]
+my_steamid=YourSteamID

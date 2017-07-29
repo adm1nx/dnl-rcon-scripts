@@ -1,11 +1,10 @@
 #!$(which ruby)
 require 'steam-condenser'
+load 'read_variables.rb'
 
-server_ip = ''
-rcon_port = '27016'
-password = ''
+read_variables()
 
-server = GoldSrcServer.new(server_ip, rcon_port)
-server.rcon_auth(password)
+server = GoldSrcServer.new($server, $rcon_port)
+# server.rcon_auth(password)
 server.init
 puts server.players
